@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ERPBasico.Dtos.EmpleadoCompletoDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Empleados</h1>
+
+<p>
+    <a asp-action="Create">Ingresar nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpleadoActivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sueldo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Posicion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gerencia)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) { 
+       
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreApellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpleadoActivo)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.Sueldo)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.Posicion)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.Gerencia)
+            </th>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                <a asp-action="Details" asp-route-id="@item.Id">Detalles</a>
+                @if (item.EmpleadoActivo == true) { 
+                    <a asp-action="Delete" asp-route-id="@item.Id">Dar de baja</a>
+                }
+            </td>
+        </tr>                     
+}
+    </tbody>
+</table>

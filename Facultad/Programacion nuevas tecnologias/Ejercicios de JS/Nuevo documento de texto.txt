@@ -1,0 +1,44 @@
+Una interfaz : es un contrato . Es declarativo. 
+
+Java no es tiene herencia multiple. 
+
+Clase abstracta -->  	 	
+
+Principios Solid --> buenos practicas. 
+
+MBC --> es un lenguaje interpretado.
+
+Visual studio COD .CORE --> APEX. 
+
+No genere la relacion comercial. 
+
+--------------------------
+
+Patrones de diseño -- investigar. 
+
+Estudiar framework de investigacion SCRUM Master --Developer. 
+
+SUPER batch de Developer.
+
+BATH De developers 
+
+Udemy fundacional de developer --> 
+
+
+----------------------
+
+Aprender bases developers
+Super batch developers 
+
+
+
+
+
+
+
+
+
+
+
+
+

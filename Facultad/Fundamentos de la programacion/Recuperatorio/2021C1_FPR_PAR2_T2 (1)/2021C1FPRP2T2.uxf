@@ -1,0 +1,54 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>12</y><w>350</w><h>100</h></coordinates><panel_attributes>EmpresaDeTransporte
+--
+- nombre: String
+--
++ EmpresaDeTransporte(String)
++ obtenerDepositosSegunCriterio(int, double): ArrayList&lt;String&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>192</y><w>410</w><h>150</h></coordinates><panel_attributes>Deposito
+--
+- provincia: String
+--
++ Deposito(String)
+- descargarCamion(Camion)
++ quitarCamionPorDesperfecto(String): ResultadoDistribucion
++ tieneCamionesSegunCriterio(int, double): boolean
+- buscarCamion(String): Camion</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>102</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- depositos</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>402</y><w>240</w><h>170</h></coordinates><panel_attributes>Camion
+--
+_- TOPE_PESO: double = 3000 _
+- patente: String
+- pesoActualCarga: double
+--
++ getPorcentajeDeCarga() : double
++ tieneCarga(): boolean
++ sacarPrimerPaquete() : Paquete
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>332</y><w>90</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- camiones</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>162</y><w>190</w><h>190</h></coordinates><panel_attributes>Paquete
+--
+- codigo: String
+- peso: double
+
+--
++ Paquete(String, double, double)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>242</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- paquetes</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>342</y><w>330</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- paquetes</panel_attributes><additional_attributes>250;10;250;140;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>282</y><w>320</w><h>230</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- camiones</panel_attributes><additional_attributes>300;200;10;200;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>192</y><w>180</w><h>100</h></coordinates><panel_attributes>Taller
+--
+- encargado: String
+- domicilio: String
+--
++ Taller(String)
++ agregarCamion(Camion):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>232</y><w>80</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- taller</panel_attributes><additional_attributes>10;20;60;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>12</y><w>300</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+ResultadoDistribucion
+--
+CAMION_ENVIADO_A_REPARACION
+CAMION_NO_ENCONTRADO
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>102</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element></diagram>

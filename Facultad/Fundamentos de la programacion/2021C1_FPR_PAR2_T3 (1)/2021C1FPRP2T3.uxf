@@ -1,0 +1,47 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>22</y><w>350</w><h>100</h></coordinates><panel_attributes>EmpresaDeTransporte
+--
+- nombre: String
+--
++ EmpresaDeTransporte(String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>202</y><w>360</w><h>120</h></coordinates><panel_attributes>Deposito
+--
+- provincia: String
+--
++ Deposito(String)
++ distribuirCarga(Camion):void
++ cargarPaquete(Paquete):boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>112</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- depositos</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>412</y><w>240</w><h>140</h></coordinates><panel_attributes>Camion
+--
+_- TOPE_PESO: double = 3000 _
+- patente: String
+- pesoActualCarga: double
+--
++ ordenarCarga():void
++ sacarPrimerPaquete() : Paquete
++ cargarPaquete(Paquete):boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>312</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- camiones</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>172</y><w>190</w><h>150</h></coordinates><panel_attributes>Paquete
+--
+- codigo: String
+- peso: double
+
+--
++ Paquete(String, double, double)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>252</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- paquetes</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>312</y><w>330</w><h>200</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- paquetes</panel_attributes><additional_attributes>250;10;250;180;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>292</y><w>320</w><h>230</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- camiones</panel_attributes><additional_attributes>300;200;10;200;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>202</y><w>180</w><h>100</h></coordinates><panel_attributes>Taller
+--
+- telefono: String
+- domicilio: String
+--
++ Taller(String,String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>242</y><w>80</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- taller</panel_attributes><additional_attributes>10;20;60;20</additional_attributes></element></diagram>

@@ -1,0 +1,84 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Open Sans;
+	font-size: Semi-bold 600 italic;
+	font-size: 16px;
+}
+
+.nav-home{
+	display: flex;
+	margin-left: 24%;
+	margin-top: 2%;
+	color: #999999;
+}
+
+.nav-buttoms{
+	text-decoration: none;
+	font-family: "Open Sans",sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+	margin-right: 7%;
+	border-bottom: 3px solid transparent;
+	color: #666666;
+}
+
+.nav-buttoms:hover{
+	border-bottom: 3px solid;
+}
+
+.containt-tile {
+	margin-left: 16vw;
+}
+
+.home{
+	background-image: url("../Img/background-2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vw;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#title-name{
+	margin-top: 2vw;
+	color: #fc9189;
+	border-width: 5px;
+	max-width: 17vw;
+	font-size: 70px;
+}
+
+.title-span{
+	color: #546f7e;
+}
+
+#title-description{
+	margin-top: -1vw;
+	margin-bottom: 2vw;
+	color: #eabea4;
+	font-size: 30px;
+}
+
+#title-linkedin{
+
+}
+
+.about-me{
+	background-image: url("../Img/aboutMe-backGround.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	backface-visibility: 20%;
+	height: 50vw;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	filter: saturate(30%);
+
+}
+
+

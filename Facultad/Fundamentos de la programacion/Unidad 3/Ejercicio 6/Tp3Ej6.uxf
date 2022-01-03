@@ -1,0 +1,64 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>620</x><y>350</y><w>290</w><h>190</h></coordinates><panel_attributes>Aplicacion
+--
+-nombre:String // ORTIFY
+--
+-buscarCancion(String,String):Cancion
+-buscarUsuario(String):Usuario
++altaCancion(String,String,String,int):boolean
++altaUsuario(String,String,edad):boolean
++escucharCancion(String,String,String):TipoResul
++listarUsuarios():void
++listarCancionesPorUsuario(String):TipoResul
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>350</y><w>210</w><h>190</h></coordinates><panel_attributes>Cancion
+--
+-nombre: String
+-autor: String
+-antiguedad:String
+-cantReproduciones:int
+--
++antiguedadPublicacion():int
+- esPremium():boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>350</y><w>210</w><h>190</h></coordinates><panel_attributes>Usuario
+--
+-email:String
+-apellido:String
+-edad:int
+-cancionesEscu:int
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>430</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-usuarios
+m1=0...*</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>430</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-canciones
+m1=0..*</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>170</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoUsuario
+--
++GRATUITO
++REGISTRADO
++PREMIUM
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>250</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+tipoUsuario
+m1=1</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLNote</id><coordinates><x>0</x><y>160</y><w>530</w><h>80</h></coordinates><panel_attributes>-Usuarios Free --&gt; 50 x dia y no (estrenos,cortes especiales ,etc).
+-usuarios.registrado --&gt; no (estrenos,cortes especiales ,etc)
+-Canciones no son premium si se escucharon (1000) o pasaron 7 desde su publicacion. XX
+-No se pueden repetir autor nombre es lista de canciones
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>380</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+GeneroMusical
+--
++ROCK
++POP
++TRAP
++CUMBIA</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>420</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-genero
+m1=1</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>530</y><w>710</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+-historial
+m1=0..*</panel_attributes><additional_attributes>10;10;10;120;690;120;690;10</additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>300</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>120</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoResult
+--
++CANCION_ESCUCHADA
++USUARIO_INEXISTENTE
++CANCION_INEXISTENTE
++LIMITE_ALCANZADO
++CANCION_NO_DISPONIBLE
++OPERACION_EXITOSA
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

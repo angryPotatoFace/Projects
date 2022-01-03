@@ -1,0 +1,9 @@
+﻿.clase {
+    /*fontFamily = "Comic Sans Ms";
+    text .style.fontSize= "14px";
+    text .style.color= "red";*/
+
+    font-family: 'Comic Sans MS';
+    font-size: 14px;
+    color: red;
+}

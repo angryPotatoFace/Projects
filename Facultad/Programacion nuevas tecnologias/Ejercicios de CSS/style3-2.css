@@ -1,0 +1,34 @@
+.table{
+	border: solid;
+	border-width: 1px;
+}
+
+.Head{
+	background: blue;
+	color: white;
+}
+
+#ROW1{
+	background: orange;
+}
+
+#ROW3{
+	background: orange;
+}
+#ROW5{
+	background: orange;
+}
+
+#ROW2{
+	background:yellow ;
+}
+
+#ROW4{
+	background:yellow ;
+}
+
+#ROW6{
+	background:yellow  ;
+}
+
+

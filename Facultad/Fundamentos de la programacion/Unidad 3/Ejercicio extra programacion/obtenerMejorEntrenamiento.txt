@@ -1,0 +1,17 @@
+ublic Clasificacion obtenerMejorEntrenamiento() {
+		Clasificacion clasi=null;
+		double max=0;
+		for (Entrenamiento entrenamiento : entrenamientos){
+			if(entrenamiento.getKmsRecorridos()>max) {
+					clasi=new Clasificacion(this.dni,this.categoria,entrenamiento);
+				}else{
+				if(entrenamiento.getKmsRecorridos()==max){
+					if(entrenamiento.obtenerSegundos()>clasi.getEntrenamiento().obtenerSegundos()) {
+						clasi=new Clasificacion(this.dni,this.categoria,entrenamiento);
+					}
+				}
+			}
+		}
+		
+		return clasi;
+	}

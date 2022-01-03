@@ -1,0 +1,23 @@
+.VACIO{
+	height: 20em;
+	width: 30em;
+	float: left;
+}
+
+
+#CIRCULO{
+	height: 20em;
+ 	width:  20em;
+ 	background-color: red;
+  	border-radius: 50%;
+  	float: left;
+  	margin-top: 8em;
+}
+
+#CIRCULO:hover{
+	height: 20em;
+  	width:  20em;
+ 	background-color: green;
+ 	border-radius: 2em;
+ 	float: left;
+}

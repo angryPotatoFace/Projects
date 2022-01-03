@@ -1,0 +1,40 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>40</y><w>320</w><h>190</h></coordinates><panel_attributes>Instituto
+--
+
+
+--
++ obtenerCandidatos(String,double):ArrayList&lt;Candidato&gt;
+- buscarCarrera(String):Carrera</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>190</y><w>170</w><h>190</h></coordinates><panel_attributes>Alumno
+--
+- nombre: String
+- mail: String
+
+--
++ dameCantMaterias():int
++ damePromedio():double
+- sumarNotas():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>390</y><w>210</w><h>190</h></coordinates><panel_attributes>Materia
+--
+- nombre: String
+- notaFinal: int
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>40</y><w>290</w><h>190</h></coordinates><panel_attributes>Carrera
+--
+- nombre: String
+
+--
++ obtenerCandidatos(double):ArrayList&lt;Candidato&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>390</y><w>210</w><h>190</h></coordinates><panel_attributes>Candidato
+--
+- nombre: String
+- mail:String
+
+--
++ Candidato(String,String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>110</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*
+- carreras</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>110</y><w>200</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*
+- alumnos</panel_attributes><additional_attributes>130;80;130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>370</y><w>240</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*
+- materiasAprobadas</panel_attributes><additional_attributes>10;60;220;60;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>210</y><w>450</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*
+- alumnos</panel_attributes><additional_attributes>430;90;30;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>210</y><w>210</w><h>200</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;180;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>220</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element></diagram>

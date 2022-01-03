@@ -1,0 +1,14 @@
+﻿body {
+    font-family: 'Rampart One', cursive;
+    font-size:20px;
+}
+
+.Column2{
+    position:relative;
+    left:2em;
+}
+
+.Column3 {
+    position: relative;
+    left: 3em;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Front End Store</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="preload" href="./css/style.css" as="style"> <!-- Sirve para pre cargar el archivo mejora para perfomance -->
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> <!-- importo esta fuente de google fonts -->
+        <link rel="preload" href="./css/normalize.css" as="style">  <!-- Sirve para pre cargar el archivo mejora para perfomance -->
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/normalize.css'> 
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html">
+                <img class="header__logo" src="/img/FrontEndStore_inicio/logo.png" alt="LogoTipo">
+            </a>
+        </header>
+        <nav class="navegacion">
+            <a class="navegacion__enlace " href="index.html">Tienda</a>
+            <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+        </nav>
+
+        <main class="contenedor">
+            <section class=sobreNosotros>
+                <h1>Sobre Nosotros</h1>
+                <div class ="nosotros">
+                    <p class="nosotros__descripcion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quas, ducimus aliquid fugit assumenda sed, placeat eius sequi reprehenderit, officia libero velit natus voluptates molestiae consequatur. Rerum officia doloremque quos?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, quia, voluptate ab provident fugiat beatae facilis quibusdam molestiae velit non, fugit autem qui maxime iste! Id totam amet officiis architecto?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam id doloribus porro reiciendis rem repudiandae omnis quo adipisci assumenda, et quis atque temporibus soluta non maiores consectetur incidunt officiis?
+                    </p>
+                    <img class="nosotros__imagen" src="/img/FrontEndStore_inicio/nosotros.jpg" alt="imagen nosotros">
+                </div>
+            </section>
+
+            <section class="contenedor compraNosotros">
+                <h2>¿Porqué comprar con nosotros?</h2>
+                <div class="motivos">
+                    <div class="motivo">
+                        <img class="motivo__imagen" src="/img/FrontEndStore_inicio/icono_1.png" alt="porque comprar">
+                        <h3>El mejor precio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum libero similique nemo saepe! Explicabo, iste maiores dolor corporis voluptatibus obcaecati similique culpa, sint asperiores omnis ullam quia. Hic, nihil?</p>
+                    </div>
+                    <div class="motivo">
+                        <img class="motivo__imagen" src="/img/FrontEndStore_inicio/icono_2.png" alt="porque comprar">
+                        <h3>Para devs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum libero similique nemo saepe! Explicabo, iste maiores dolor corporis voluptatibus obcaecati similique culpa, sint asperiores omnis ullam quia. Hic, nihil?</p>
+                    </div>
+                    <div class="motivo">
+                        <img class="motivo__imagen" src="/img/FrontEndStore_inicio/icono_3.png" alt="porque comprar">
+                        <h3>Envio Gratis</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum libero similique nemo saepe! Explicabo, iste maiores dolor corporis voluptatibus obcaecati similique culpa, sint asperiores omnis ullam quia. Hic, nihil?</p>
+                    </div>
+                    <div class="motivo">
+                        <img class="motivo__imagen" src="/img/FrontEndStore_inicio/icono_4.png" alt="porque comprar">
+                        <h3>La Mejor Calidad</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum libero similique nemo saepe! Explicabo, iste maiores dolor corporis voluptatibus obcaecati similique culpa, sint asperiores omnis ullam quia. Hic, nihil?</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+             <p class="footer__texto">Todos los derechos reservados @ 2022</p> 
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>190</x><y>270</y><w>270</w><h>120</h></coordinates><panel_attributes>Inmobiliaria
+--
++mostrarPropiedades():void
+- buscarBarrio(nombre):Barrio
++obtenerBarrioMaxProp():barrios
++borrarPropiedad(String):void
++cambiarPropiedadDeBarrio(String,Barrio):void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>490</y><w>220</w><h>110</h></coordinates><panel_attributes>Propiedad
+--
+-domicilio: String
+-precio: double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>490</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoPropiedad
+--
++Departamente
++Casa
++PH</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>270</y><w>210</w><h>120</h></coordinates><panel_attributes>Barrio
+--
+-nombre: String
+--
++mostrarPropiedades(TipoPropiedad):void
+- buscarPropiedad(String):Propiedad
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>320</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-barrios
+m1=0..*</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>380</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+propiedades
+m1=0..1
+</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>520</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-tipoPropiedad
+m1=1</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>330</y><w>210</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>190;160;10;10</additional_attributes></element></diagram>

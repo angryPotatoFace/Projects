@@ -1,0 +1,23 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>50</x><y>10</y><w>290</w><h>210</h></coordinates><panel_attributes>Agenda
+--
+
+
+
+--
++ Agenda()
+- buscarPersona(String):Persona
++ agregarPersona(String,String,String):boolean
++ removerPersona(String):Persona
++ modificarDomicilio(String,String):boolean
++ listarPersonas():void
++ eliminarTodosElementosAMano():void
++ devolverUltimo():Persona</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>310</y><w>290</w><h>190</h></coordinates><panel_attributes>Persona
+--
+- nombreYApellid: String
+- dni: String
+- domicilio: String
+--
++ mostrarDatos():viod
++ modificateDomicilio(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>210</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*
+- personas</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element></diagram>

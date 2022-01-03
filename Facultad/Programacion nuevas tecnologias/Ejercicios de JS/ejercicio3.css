@@ -1,0 +1,21 @@
+﻿* {
+    font-family: 'Urbanist', sans-serif;
+    font-size:25px;
+}
+
+#texto {
+    position:absolute;
+    margin-left:10px;
+    top:2em;
+}
+#texto_Ingresado {
+    position: absolute;
+    margin-left: 10px;
+    top: 90px;
+}
+.texto-correcto{
+    background-color:green;
+}
+.texto-incorrecto{
+    background-color:red;
+}

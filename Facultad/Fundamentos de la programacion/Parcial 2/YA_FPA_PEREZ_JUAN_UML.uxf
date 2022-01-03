@@ -1,0 +1,48 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>467</x><y>620</y><w>210</w><h>60</h></coordinates><panel_attributes>Empresa
+--
+-nombre:String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>467</x><y>70</y><w>220</w><h>190</h></coordinates><panel_attributes>Camion
+--
+_PESO_MAXIMO:double_
+-patente:String
+-pesoCargaActual:double
+--
++cargarPaquete(Paquete):boolean
++ordenarCarga():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>467</x><y>360</y><w>210</w><h>190</h></coordinates><panel_attributes>Deposito
+--
+-nombreProvincia:String
+--
++cargarPaquete(Paquete):boolean
++distribuirCarga(Camion):void
++removerCamion():boolean
+-buscarCamion(String):Camion
++enviarAReparacion(String):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>17</x><y>50</y><w>330</w><h>70</h></coordinates><panel_attributes>-pesoMaximoPaquetas 3000kg x camion
+-
+-antes de enviar un camion al taller hay que dejarlo vacio
+-
+-carga no asignada vuelve al deposito
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>67</x><y>390</y><w>280</w><h>100</h></coordinates><panel_attributes>Taller
+--
+-domicilio:String
+-numeroTelefono:String
+--
++agregarCamionReparar(Camion):boolean
+-buscarCamion(String):boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>817</x><y>400</y><w>210</w><h>80</h></coordinates><panel_attributes>Paquete
+--
+-codigo:String
+-pesoMedio: double
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>557</x><y>540</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+depositos
+m1=0..*</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>557</x><y>250</y><w>80</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+camiones
+m1=0..*</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>667</x><y>430</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-paquetes
+m1=0..*</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>677</x><y>170</y><w>300</w><h>250</h></coordinates><panel_attributes>lt=&lt;-
+-paquetesCargados
+m1=0..*</panel_attributes><additional_attributes>180;230;180;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>337</x><y>410</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+taller
+m1=1</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>227</x><y>190</y><w>260</w><h>220</h></coordinates><panel_attributes>lt=&lt;-
+-camionesReparacion
+m1=0..*</panel_attributes><additional_attributes>240;20;10;20;10;200</additional_attributes></element></diagram>

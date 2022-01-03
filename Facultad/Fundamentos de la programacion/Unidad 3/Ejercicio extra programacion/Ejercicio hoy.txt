@@ -1,0 +1,50 @@
+Objetivos
+
+Agregar un elemento a una lista sin duplicados
+
+Agregar un elemento a un objeto de la lista
+
+Listar los elementos de una lista
+
+Devolver o llenar una lista 
+
+
+Corredores 2.0
+
+El entrenador del equipo de running "parcial 1" quiere ver quien esta en condiciones de correr 
+una maraton
+Para ello tiene una lista de corredores con los siguientes datos
+Nombre, apellido, Dni , edad y categoria. La categoria se asigna segun la edad
+(15 a 17 JUNIOR, 18 a 40 MAYOR, 41 en adelante SENIOR)
+Cada corredor tiene una lista donde registra todos los entrenamientos del ultimo mes
+Por cada entrenamiento se guarda KM recorridos y tiempo (Horas, minutos,segundos)
+El programa debe permitir
+- Agregar runners
+	- metodo que clacule la categoria segun la edad, se usa en el constructor;
+	- metodo agregarCorredor en Grupo
+		-
+
+- Agregar entrenamiento a un runner (kilometros, horas, minutos y segundos)
+	- agregarEntrenamiento en grupo con dni+ datos de entrenamiento
+		- validamos datos erroneos antes de insertar
+	- agregarEntrenamiento en corredor
+- Listamos corredores
+	-Listamos entrenamientos
+	
+- Se pide un metodo obtenerMejoresEntrenamientos de la clase Grupo que debe recorrer todos los corredores 
+y vamos a agregar en una lista de clasificaciones el mejor entrenamiento que haya realizado cada corredor 
+(metodo obtenerMejoreEntrenamiento de la clase corredor que va a devolver un entrenamiento)
+, esta lista es de tipo
+Clasificacion cuyos atributos seran el dni de un corredor, la categoria, y un entrenamiento.
+Donde
+ - El mejor entrenamiento es el de mayor distancia recorrida. 
+ - Si se repite la distancia, es la de menor tiempo 
+
+y por ultimo
+- Dada una distancia y una categoria, 
+devolver una lista de clasificados que hayan corrido la distancia indicada o mayor  
+al especificado para la categoria seleccionada
+- devolverClasificados 
+- Creamos mostrarClasificados para usar la lista que devuelve devolverClasificados
+
+ 

@@ -1,0 +1,65 @@
+package ort.thp.part1;
+
+import java.util.Scanner;
+
+public class EjercicioLeon {
+
+	public static void main(String[] args) {
+		
+		Scanner escanear = new Scanner (System.in);
+
+		
+		final int ALI_MAX = 10 ;
+		final int ALI_MIN = 0 ;
+		final int TOPE = 3; 
+		int i ; 
+		int kgAlimento; 
+		int acumAlimento = 0;
+		char respuesta ; 
+		int maxAlimento = -9999; 
+		int tandaMax=1 ; 
+		int totAlimento = 0 ;
+		double promedio; 
+		
+		
+		for (i=1 ; i <= TOPE ; i++) {
+		do {	
+			do {
+				
+				System.out.println("Ingrese Kg de alimentos ");
+				kgAlimento = Integer.parseInt(escanear.nextLine());
+				
+			}while(kgAlimento < ALI_MIN || kgAlimento > ALI_MAX);
+			
+			totAlimento += kgAlimento ;
+			acumAlimento += kgAlimento;
+			
+			do {
+				System.out.println("Quiere seguir comiendo");
+				respuesta = escanear.nextLine().charAt(0);
+			
+			}while( respuesta != 'S' && respuesta !='N');
+			
+			
+		}while( respuesta != 'N');
+		
+		if ( acumAlimento > maxAlimento )
+		{
+				maxAlimento = acumAlimento ;
+				tandaMax = 1 ;	
+		}
+		
+		acumAlimento = 0; 
+		
+			}
+		
+		promedio = totAlimento / TOPE ; 
+		System.out.println("El promedio es : " + promedio);
+		System.out.println("La cantidad de alimento total que comio fue: "+ totAlimento);
+		System.out.println("La cantidad maxima fue :" +maxAlimento + " y la tanda fue " + tandaMax);
+		
+		escanear.close();
+			
+		}
+
+	}

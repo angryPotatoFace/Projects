@@ -1,0 +1,42 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>200</x><y>457</y><w>210</w><h>190</h></coordinates><panel_attributes>Turno
+--
+-presencia:boolean
+-numero:int
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>457</y><w>240</w><h>190</h></coordinates><panel_attributes>Agenda
+--
+-dia:String
+_-CANT_TURNO:int_
+--
++Agenda(int)
+-buscarTurno(String)
++registrarTurno(Paciente ):ResuRegistro
++listarTurnos():void
++darPresente(String):boolean
++anularTurno(String):boolean
++obtenerListaAusentes():ArrayList&lt;Paciente&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>457</y><w>210</w><h>190</h></coordinates><panel_attributes>Paciente
+--
+-dni:String
+-nombre:String
+-apellido:String
+-telefono:String
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>537</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-turnos
+m1=0..*</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>537</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-pacientes
+m1=0..*</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>177</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+ResuTurno
+--
++TURNO_CONFIRMADO
++NO_HAY_MAS_TUERNOS
++USUARIO_YA_TIENE_TURNO
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>357</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>637</y><w>700</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+-paciente
+m1=1</panel_attributes><additional_attributes>670;10;670;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>490</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-listaAusentes
+m1=0..*</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element></diagram>

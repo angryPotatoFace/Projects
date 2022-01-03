@@ -1,0 +1,7 @@
+Un zoológico necesita alimentar y obtener información de un león que se encuentra en rehabilitación luego de una cirugía.
+Por día se alimenta 3 veces a este león y por cada tanda se lo alimenta hasta que este no tenga mas ganas de comer.
+Cada vez que se le da comida se debe ingresar la cantidad en kg(>0 y <10) de alimento que se le dio y se le debe preguntar si quiere seguir comiendo('S','N')
+
+Se desea saber cual de las 3 comidas fue la que el León comió mas Kg de alimento y cual fue esa cantidad
+El total en kg de alimento recibido.
+Promedio de alimento por tanda.

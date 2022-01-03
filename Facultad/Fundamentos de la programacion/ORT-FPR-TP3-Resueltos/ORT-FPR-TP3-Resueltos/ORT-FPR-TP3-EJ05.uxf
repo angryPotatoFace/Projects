@@ -1,0 +1,59 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>340</y><w>210</w><h>130</h></coordinates><panel_attributes>Cliente
+--
+- nombre: String
+- DNI: String
+- saldoAPagar: double
+--
++ esDeudor(): boolean
++ esPremium(): boolean
++ agregarPeliculaVista(Pelicula): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>290</y><w>280</w><h>140</h></coordinates><panel_attributes>OrtFlix
+--
+
+--
++ verPelicula(String, String): ResultadoVP
++ darDeBaja(String): void
++ darDeAlta(String, TipoServicio): ResultadoAC
++ depurarListaNegra(double): void
+- buscarCliente(String, ArrayList&lt;Cliente&gt;): Cliente
+- buscarPelicula(String): Pelicula
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>550</y><w>90</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoServicio
+--
+_+ PREMIUM_
+_+ STANDARD_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>370</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- clientes
+m1=*</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>460</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+- tipo
+m1=1</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>400</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- listaNegra
+m1=*</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>510</y><w>220</w><h>70</h></coordinates><panel_attributes>Historial
+--
+--
++ agregarPeliculaVista(Pelicula): void
+- buscarPelicula(String): Pelicula</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>460</y><w>130</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+- historial
+m1=1</panel_attributes><additional_attributes>110;70;10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>514</x><y>420</y><w>90</w><h>260</h></coordinates><panel_attributes>lt=&lt;-
+- peliculas
+m1=*</panel_attributes><additional_attributes>16;240;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>570</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+- peliculasVistas
+m1=*</panel_attributes><additional_attributes>20;90;16;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>335</x><y>100</y><w>120</w><h>120</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+ResultadoVP
+--
+_+ CLI_INEX_
+_+ CONT_INEX_
+_+ CLI_DEUDOR_
+_+ CONT_NO_DISP_
+_+ OK_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>444</x><y>160</y><w>60</w><h>150</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;40;10;40;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>115</x><y>110</y><w>100</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+ResultadoAC
+--
+_+ CLI_EXIST_
+_+ CLI_DEUDOR_
+_+ ALTA_OK_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>134</x><y>190</y><w>310</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;70;290;70;290;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>660</y><w>160</w><h>70</h></coordinates><panel_attributes>Pelicula
+--
+- nombre: String
+--
++ esPremium(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>620</y><w>280</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+- tipo
+m1=1</panel_attributes><additional_attributes>10;10;10;80;260;80</additional_attributes></element><element><id>Relation</id><coordinates><x>94</x><y>420</y><w>540</w><h>360</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;210;10;340;520;340;520;10</additional_attributes></element></diagram>

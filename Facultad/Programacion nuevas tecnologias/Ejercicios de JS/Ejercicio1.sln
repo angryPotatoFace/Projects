@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejercicio1", "Ejercicio1\Ejercicio1.csproj", "{789EBE00-080D-48A6-B67E-05608EAACB1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio 1", "Ejercicio 1", "{DCE846C2-9194-40BC-B266-01DB59F5825E}"
+	ProjectSection(SolutionItems) = preProject
+		HTMLPage1.html = HTMLPage1.html
+		Script1.js = Script1.js
+		StyleSheet1.css = StyleSheet1.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio2", "Ejercicio2", "{925839E0-3E77-4C4E-BAEB-E716CE1B1762}"
+	ProjectSection(SolutionItems) = preProject
+		Ejercicio2.css = Ejercicio2.css
+		Ejercicio2.html = Ejercicio2.html
+		Ejercicio2.js = Ejercicio2.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio3", "Ejercicio3", "{9B93F8C6-ED77-49FE-829B-DFB684AFEEBE}"
+	ProjectSection(SolutionItems) = preProject
+		ejercicio3.css = ejercicio3.css
+		ejercicio3.html = ejercicio3.html
+		ejercicio3.js = ejercicio3.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio4", "Ejercicio4", "{005534C0-F9A5-46DC-B20A-D0C83D9A113B}"
+	ProjectSection(SolutionItems) = preProject
+		ejercicio4.css = ejercicio4.css
+		Ejercicio4.html = Ejercicio4.html
+		Ejercicio4.js = Ejercicio4.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio6", "Ejercicio6", "{C2443A2A-A4C3-4829-882D-969ED5C48800}"
+	ProjectSection(SolutionItems) = preProject
+		ejercicio6.css = ejercicio6.css
+		ejercicio6.html = ejercicio6.html
+		ejercicio6.js = ejercicio6.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{789EBE00-080D-48A6-B67E-05608EAACB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789EBE00-080D-48A6-B67E-05608EAACB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789EBE00-080D-48A6-B67E-05608EAACB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789EBE00-080D-48A6-B67E-05608EAACB1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DE9ABDC-0011-45B2-8E55-B02F5A8B1114}
+	EndGlobalSection
+EndGlobal

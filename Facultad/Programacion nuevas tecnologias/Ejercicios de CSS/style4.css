@@ -1,0 +1,18 @@
+p::first-line{
+	color: skyblue;
+}
+
+p::first-letter{
+	color: blue;
+	font-size: 2em;
+}
+
+div {
+	border: solid;
+	border-width: 1px;
+}
+
+div p{
+   	margin: 0em;
+	width: 50vw;
+}

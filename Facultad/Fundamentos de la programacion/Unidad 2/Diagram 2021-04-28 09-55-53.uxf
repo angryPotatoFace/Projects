@@ -1,0 +1,25 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>326</x><y>260</y><w>290</w><h>250</h></coordinates><panel_attributes>Vehiculo 
+--
+-marca String
+-modelo String
+-color String
+-velMax double
+-velActual double
+-encendido boolean
+--
++estaEncendido():boolean
++ encender():boolean
++apagar ():boolean
++acelerar ():boolean
++frenar():boolean
++gira():boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>336</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Propietario
+--
+-nombre String
+-apellido String
+
+--
++conducir</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>416</x><y>180</y><w>70</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+vehiculo
+m1=1</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element></diagram>

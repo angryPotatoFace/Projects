@@ -1,0 +1,36 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>678</x><y>159</y><w>210</w><h>190</h></coordinates><panel_attributes>Duenio
+--
+-nombre: String
+--
++prepararPaseo(String):boolean
+- buscarPerro(String): Perro
++ regresarPaseo():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>218</x><y>159</y><w>210</w><h>190</h></coordinates><panel_attributes>Perro
+--
+-nombre:String
+-colaMoviendose:boolean
+--
+-moverCola():void
++ponerCollar(Collar):void
++pedirPaseo():void
++quitarCollar():Collar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>218</x><y>499</y><w>210</w><h>90</h></coordinates><panel_attributes>Collar
+--
+-chapita: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>668</x><y>499</y><w>210</w><h>100</h></coordinates><panel_attributes>Perchero
+--
+
+--
++dameCollar(String):Collar
+- buscarCollar(String):Collar
++ colgarCollar(Collar): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>179</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-perros
+m1=1..*</panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>299</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-duenio
+m1=1</panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>339</y><w>60</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+-collar
+m1=0..1</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>519</y><w>270</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-collares
+m1=0..3</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>339</y><w>280</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;160;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>748</x><y>339</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+-perchero
+m1=1</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element></diagram>

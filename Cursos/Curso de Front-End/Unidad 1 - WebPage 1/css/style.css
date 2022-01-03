@@ -1,0 +1,252 @@
+/* Defino variables para re utilizar en todo el codigo*/
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFc107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+    --fuente-principal: 3.8rem;
+}
+
+
+/*Defino cosas variables*/
+html{
+    font-size: 62.5%; /* 1 rem = 10 px*/ 
+    box-sizing: border-box; /* Evita que el padding modifique el tamaño de mis imagenes*/
+    scroll-snap-type: y mandatory;
+}
+
+
+
+/* Defino las secciones de donde debe moverse el Scroll*/
+.head,
+.main,
+.servicios-section,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit; /* Evita que el padding modifique el tamaño de mis imagenes*/
+}
+
+body{
+    font-size: 16px;  /* 1 rem = 10 px*/ 
+    color: var(--oscuro);
+    font-family: 'Andada Pro', serif; /* Fonts */
+    background-image: linear-gradient(to top, var(--grisClaro)0%, var(--blanco) 100%);
+}
+/* Defino tamaño de fuentes*/
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+/* Alineo titulos*/
+h1,h2,h3{
+    text-align: center;
+}
+/* Propiedades de boton*/
+.bottom {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: none;
+}
+
+/* Cuando pasa el mouse por arriba del boton se convierte el punto cambia a manito*/
+.bottom:hover{
+    cursor: pointer;
+}
+
+.shadow{
+    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.3);  /* https://webcode.tools/generators/css/box-shadow  generador de sombras */
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: var(--blanco);
+}
+
+.head-title{
+    font-size: var(--fuente-principal)
+}
+
+.head-span{
+    font-size: 2rem;
+}
+
+/* Clase para alinear contenedores de los elementos */
+.contenedor{
+    max-width: 120rem;
+    margin: 0px auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+/* clase que alinea los elementos en el navegador*/
+.nav-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Utilizo query para setear comportamiento para  dispositivos de esos px (Tablet) */
+@media (max-width: 768px){
+    .nav-contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-contenedor-boton{
+        border-bottom: 0.1px solid;
+        border-color: var(--oscuro);
+    }
+}
+
+/* Valores para botones del navegador*/
+.nav-contenedor-boton{
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 2rem;
+    margin: auto 0px;
+    padding: 1rem;
+}
+
+.nav-contenedor-boton:hover{
+    background-color: var(--primario);
+}
+
+/* Seteo la imagen de fondo en el main*/
+.main{
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/657/137/89/work-finance-documents-office-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.main-div{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .40);  /* Le agregar difuminacion al fondo */
+    height: 100%;
+    width: 100%;
+
+    display: flex;            /* De aca para abajo puedo para alinear elementos dentro de un contenedor */ 
+    flex-direction: column;   /* De aca para abajo puedo para alinear elementos dentro de un contenedor */ 
+    align-items: center;      /* De aca para abajo puedo para alinear elementos dentro de un contenedor */ 
+    justify-content: center;  /* De aca para abajo puedo para alinear elementos dentro de un contenedor */ 
+    color: var(--blanco)
+}
+
+.main-div-location{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: -4rem;
+}
+
+/* Contenedor de los servicios */
+.contenedor-servicios{
+    display: grid;  /* Me muestra los elementos como si fuera una tabla*/ 
+    grid-template-columns: 1fr 1fr 1fr;  /* Defino 3 columna y el tamaño seria 3 porciones igual  33,3 % = 1 fr  (fr = fraccion) */
+    column-gap: 5rem; /* Defino la distancia entre las columnas*/
+}
+
+/* Alineo servicios en columna*/
+
+@media (max-width: 768px){
+    .contenedor-servicios{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+ 
+.servicios-imagenes {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicios-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios-section h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicios-section p{
+    line-height: 2;
+}
+
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%);  /* Evalua cual valor es mas pequeño y aplica ese. Muy util para responsive designe*/ 
+    border-radius: 1rem;
+    margin: 0px auto;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend {
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primario);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.formulario-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    color: var(--blanco);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+
+}
+
+.inputs input,
+.inputs textarea {
+    border-radius: .5rem;
+    border:none;
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}

@@ -1,0 +1,36 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>120</y><w>210</w><h>190</h></coordinates><panel_attributes>Compania
+--
+- nombreCompañia: String
+--
++Compañia()
++mostrarEmpleados():void
+- recorrerAreas():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>120</y><w>210</w><h>200</h></coordinates><panel_attributes>Area
+--
+-nombreArea: String
+--
++Area()
++mostrarArea():void
+- recorrerOficina():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>390</y><w>210</w><h>190</h></coordinates><panel_attributes>Oficinas
+--
+-numeroOficina: String
+--
++Oficinas()
++mostrarOficina():void
+- recorrerEmpleados():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>390</y><w>210</w><h>190</h></coordinates><panel_attributes>Empleados
+--
+-nombre:String
+-apellido:String
+-dni:String
+--
++Empleado()
++mostrarDatos():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>310</y><w>90</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+listaOficinas
+
+m1=1..*</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>450</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+listaEmpleados
+
+m1=*</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>200</y><w>150</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+-ListaAreas
+
+m1=*
+</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element></diagram>

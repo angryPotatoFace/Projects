@@ -1,0 +1,60 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>256</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>SitioWeb
+-
+-nombre: String
+-
++suscribirseACurso(String,String): Resultado
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>646</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>Usuario
+--
+-id: String
+-nombre: String
+-mail: String
+-becado: boolean
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>110</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+usuarios
+m1=0..*</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>246</x><y>340</y><w>210</w><h>190</h></coordinates><panel_attributes>Categoria
+--
+-id: String
+-nombre: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>646</x><y>340</y><w>210</w><h>190</h></coordinates><panel_attributes>Curso
+--
+-id: String
+-titulo: String
+-precio: float
+-valor: int
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>446</x><y>390</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+cursos
+m1=0..*</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>666</x><y>230</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+autor
+m1=1</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>610</y><w>210</w><h>110</h></coordinates><panel_attributes>Leccion
+--
+-nombre:String
+-duracion:float
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>520</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-lecciones
+m1=0..*</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>620</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoLeccion
+--
++TEXTO
++VIDEO
++RECURSO
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>670</y><w>90</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-tipo
+m1=1</panel_attributes><additional_attributes>70;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>796</x><y>230</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-suscriptos
+m1=0..5</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>230</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-categorias
+m1=0..*</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Resultado
+--
++CURSO_INEX
++USUARIO_INEX
++YA_SUSCRIPTO
++ES_AUTOR
++MAX_BECADOS
++SUSCRIPTO_OK
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>130</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element></diagram>

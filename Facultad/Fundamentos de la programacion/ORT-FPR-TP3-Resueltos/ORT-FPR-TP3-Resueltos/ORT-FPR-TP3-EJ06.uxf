@@ -1,0 +1,64 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>40</y><w>290</w><h>260</h></coordinates><panel_attributes>App
+--
+- nombre:String
+
+
+
+
+--
++ App(String)
+- buscarCancion(String,String):Cancion
+- buscarUsuario(String):Usuario
++ altaCancion(String,String,String):boolean
++ altaUsuario(String,String,int,Categoria):boolean
++ escucharCancion(String,String,String):Resultado
++ listarUsuarios():void
++ listarCancionesPorUsuario():boolean
+- estaRestringida(Usuario,Cancion):boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>40</y><w>210</w><h>190</h></coordinates><panel_attributes>Usuario
+--
+- mail:String
+- apellido:String
+- edad:int
+- cantReproducciones:int
+
+--
++ Usuario(String.String.int,Categoria)
++ chequearLimite():boolean
++ mostrarCanciones():void
++ escuchaCancion(Cancion):void
++ sosPremium():boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>40</y><w>110</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Categoria
+--
++ GRATUITO
++ REGISTRADO
++ PREMIUM
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>320</y><w>210</w><h>220</h></coordinates><panel_attributes>Cancion
+--
+- nombre:String
+- autor:String
+- genero:String
+- cantDiasPublicado: int
+- cantReproducciones:int
+
+--
++ Cancion(String,String,String)
++ sumarReproduccion():void
++ mostrarDatos():void
++ estasRestringida():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>90</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*
+- usuarios</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>160</y><w>140</w><h>220</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*
+-canciones</panel_attributes><additional_attributes>120;190;40;190;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>70</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- categoria</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>220</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*
+- canciones</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>370</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Resultado
+--
++ CANCION_ESCUCHADA
++ USUARIO_INEXISTENTE
++ CANCION_INEXISTENTE
++ LIMITE_ALCANZADO
++ CANCION_NO_DISPONIBLE</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>290</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>0</y><w>640</w><h>60</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>620;40;620;10;10;10;10;40</additional_attributes></element></diagram>

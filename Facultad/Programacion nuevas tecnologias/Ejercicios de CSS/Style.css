@@ -1,0 +1,27 @@
+.div__elem1{
+	height:5em;
+	width: 26em;
+	background: red;
+	color: white;
+	float: left;
+}
+
+.div__elem2{
+	height: 5em;
+	width:  26em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: blue;	
+	border-radius: 10px;
+	color: dark;
+	float: left
+}
+
+
+.div__elem3{
+	height: 5em;
+	width: 26em;
+	background: red;
+	color: black;
+	float: left
+}
